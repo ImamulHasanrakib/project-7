@@ -1,0 +1,86 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.services{
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  
+}
+.services .ser_title h1{
+  font-size: 2em;
+  font-weight: 600;
+  position: relative;
+  color: #aaa;
+}
+.content{
+  width: 100%;
+  padding: 2.25em 1.125em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content .card{
+  width: calc(100% / 3 - 1.875em) ;
+  text-align: center;
+  padding: 3em 2em;
+  border-radius: 0.75em;
+  background: linear-gradient(to right, #c31432, #240b36);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all 0.3s linear;
+  animation:  animate 10s linear infinite;
+}
+@keyframes animate{
+  0%{
+    background: linear-gradient(to right, #c31432, #240b36);
+  } 
+  25%{
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
+  }
+  75%{
+    background: linear-gradient(to right, #000428, #004e92);
+  }
+  100%{
+    background: linear-gradient(to right, #c31432, #240b36);
+  }
+}
+.content .card:hover{
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.content .card .element p{
+  font-size: 1.125em;
+  line-height: 1.5em;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1.25rem;
+  color: #fff;
+}
+ .content .card .element .link a.btn{
+   display: inline-block;
+   padding: 0.625em 1.25em; 
+   text-decoration: none;
+   font-size: 1.125em;
+   border: 1px solid rgb(255, 255, 255);
+   border-radius: 1.25em;
+   color: rgb(255, 255, 255);
+ }
+.content .card .element h4{
+  font-size: 1.25em;
+  margin: 1.25rem 0;
+  color: #fff;
+}
+.content .img img{
+  width: 100px;
+}
